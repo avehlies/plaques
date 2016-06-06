@@ -1,0 +1,7 @@
+SetEnv CI_ENV development
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|public|robots.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
