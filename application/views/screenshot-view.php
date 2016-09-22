@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="/public/style.css">
+<link rel="stylesheet" href="<?php echo $baseUrl; ?>/public/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 	<div id="screenshot">
 		<div id="screenshot-plaque-title"><?php echo $title; ?></div>
 		<div id="screenshot-plaque-text"><?php echo $text; ?></div>
-		<img id="screenshot-plaque-image" src="/public/plaque.jpg" />
+		<img id="screenshot-plaque-image" src="<?php echo $baseUrl; ?>/public/plaque.jpg" />
 	</div>
 </body>
 </html>

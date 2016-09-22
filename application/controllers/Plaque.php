@@ -27,6 +27,7 @@ class Plaque extends CI_Controller {
 
 	public function index() {
 		$viewData = array(
+			'baseUrl' => $this->config->item('base_url'),
 			'bodyId' => 'homepage'
 		);
 		$this->load->view('header', $viewData);
@@ -37,6 +38,7 @@ class Plaque extends CI_Controller {
 	public function myList() {
 		$plaques = array();
 		$viewData = array(
+			'baseUrl' => $this->config->item('base_url'),
 			'bodyId' => 'list',
 			'plaques' => array()
 		);
@@ -75,6 +77,7 @@ class Plaque extends CI_Controller {
 		}
 
 		$viewData = $response->row_array();
+		$viewData['baseUrl'] = $this->config->item('base_url');
 		$viewData['bodyId'] = 'view';
 
 		if($render === "screenshot-render") {
@@ -106,6 +109,7 @@ class Plaque extends CI_Controller {
 		}
 		
 		$viewData = $data;
+		$viewData['baseUrl'] = $this->config->item('base_url');
 		$viewData['bodyId'] = 'create';
 		$viewData['recaptchaPublic'] = $this->recaptchaPublic;
 

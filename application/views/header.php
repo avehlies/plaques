@@ -20,7 +20,7 @@
 	<title>Historical Markers</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-	<link rel="stylesheet" href="/public/style.css">
+	<link rel="stylesheet" href="<?php echo $baseUrl; ?>/public/style.css">
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -31,12 +31,12 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/">Historical Markers</a>
+			<a class="navbar-brand" href="<?php echo $baseUrl; ?>">Historical Markers</a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li class="<?php if($page == 'create') { echo 'active'; } ?>">
-					<a href="/plaque/create">Create 
+					<a href="<?php echo $baseUrl; ?>/plaque/create">Create 
 					<?php
 						if($page == 'create') { ?>
 						<span class="sr-only">(current)</span>
@@ -46,7 +46,7 @@
 					</a>
 				</li>
 				<li class="<?php if($page == 'list') { echo 'active'; } ?>">
-					<a href="/plaque/list">List 
+					<a href="<?php echo $baseUrl; ?>/plaque/list">List 
 					<?php
 						if($page == 'list') { ?>
 						<span class="sr-only">(current)</span>

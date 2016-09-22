@@ -10,7 +10,7 @@
 					<p>by <?php echo $plaque['name']; ?></p>
 				</div>
 				<div class="flex-1 text-right">
-					<a class="btn btn-default btn-med" role="button" href="/plaque/view/<?php echo $plaque['id']; ?>/<?php echo $plaque['urlName']; ?>">
+					<a class="btn btn-default btn-med" role="button" href="<?php echo $baseUrl; ?>/plaque/view/<?php echo $plaque['id']; ?>/<?php echo $plaque['urlName']; ?>">
 						<span class="glyphicon glyphicon-arrow-right"></span>
 					</a>
 				</div>

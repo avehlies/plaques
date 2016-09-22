@@ -29,6 +29,6 @@ $(document).ready(function() {
 		<div id="plaque-text">
 			<?php echo $text; ?>
 		</div>
-		<img id="plaque-image" src="/public/plaque.jpg" />
+		<img id="plaque-image" src="<?php echo $baseUrl; ?>/public/plaque.jpg" />
 	</div>
 </div>
